@@ -1,0 +1,39 @@
+/* Austin Bennett - Date: 2023-09-21 - style.css */
+
+/* CSS Reset */
+body, h1, h2, h3, p, ul, ol, li, dl, dt, dd, form, fieldset, legend, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style the navigation to remove bullet markers */
+nav ul {
+    list-style: none;
+}
+
+/* Apply styles to specific elements with class and id selectors */
+.section-title {
+    font-family: "Arial", sans-serif;
+}
+
+#header {
+    font-family: "Helvetica", sans-serif;
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none;
+}
+
+/* Ensure high color contrast */
+body {
+    background-color: #fff;
+    color: #333;
+}
