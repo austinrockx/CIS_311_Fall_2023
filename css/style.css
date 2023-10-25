@@ -37,3 +37,48 @@ body {
     background-color: #fff;
     color: #333;
 }
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* CSS for mobile header */
+.mobile-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+}
+
+/* CSS for mobile content */
+.mobile-content {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.menu-toggle {
+    display: block;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-items li {
+    margin: 10px 0;
+}
+
+/* Add CSS to make the menu expand/collapse as needed */
+
+.rounded-element {
+    border-radius: 10px;
+}
