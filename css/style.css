@@ -82,3 +82,28 @@ body {
 .rounded-element {
     border-radius: 10px;
 }
+
+/* Mobile Styles (default) */
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+    .mobile-content {
+        display: none; /* Hide mobile-specific content */
+    }
+    .tablet-content {
+        display: block; /* Show tablet-specific content */
+    }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1024px) {
+    .tablet-content {
+        display: none; /* Hide tablet-specific content */
+    }
+    .desktop-content {
+        display: block; /* Show desktop-specific content */
+    }
+    .desktop-button:hover {
+        background-color: #FF5733; /* Change background color on hover */
+    }
+}
