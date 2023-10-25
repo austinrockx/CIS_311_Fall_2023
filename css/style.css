@@ -107,3 +107,31 @@ body {
         background-color: #FF5733; /* Change background color on hover */
     }
 }
+
+/* Define the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    grid-gap: 10px; /* Gap between grid items */
+}
+
+/* Style the grid items */
+.grid-item {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+}
+
+.text-with-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* horizontal-offset vertical-offset blur-color color */
+    font-size: 24px;
+    color: #333;
+}
+
+.box-with-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* horizontal-offset vertical-offset blur-color color */
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+}
