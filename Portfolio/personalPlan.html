@@ -22,6 +22,52 @@
         <h1>My Plan</h1>
         <main>
             <p>Hello, this plan is for after my college is finished and I am graduated.</p>
+
+            <table class="table">
+                <tr>
+                    <th>Title</th>
+                    <th>What I hope to achieve</th>
+                    <th>Number of Years there</th>
+                </tr>
+                <tr>
+                    <td>IT Tech</td>
+                    <td>Experince with basic tech problem solving, complete some need certifications for end-goal.</td>
+                    <td>5-10 years, or however long is needed for my certs</td>
+                </tr>
+                <tr>
+                    <td>Programmer</td>
+                    <td>Experience with a varity of programming languages for my end-goal</td>
+                    <td>However long is neeeded for my end-goal</td>
+                </tr>
+                <tr>
+                    <td>Penetration Tester (Pen-Tester for short)</td>
+                    <td>End-Goal Job</td>
+                    <td>End-Goal Job</td>
+                </tr>
+            </table>
+
+            <form action="submit.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+            
+                <label for="subscribe">Subscribe to Newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br>
+            
+                <input type="submit" value="Submit">
+            </form>            
+
         </main>
     </article>
 </body>

@@ -135,3 +135,80 @@ body {
     height: 200px;
     background-color: #3498db;
 }
+
+/* Styling the table for desktop view */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Styling the table for tablet view */
+@media screen and (max-width: 1024px) {
+    .table {
+        font-size: 0.9em;
+    }
+}
+
+/* Styling the table for mobile view */
+@media screen and (max-width: 768px) {
+    .table {
+        font-size: 0.8em;
+    }
+}
+
+/* Style the mobile list if you choose to display it instead */
+.mobile {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the form for tablet and mobile views as needed */
+@media screen and (max-width: 1024px) {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 0.8em;
+    }
+}
