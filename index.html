@@ -1,0 +1,66 @@
+
+<!-- Austin Bennett: index.html - Date: 2023-09-21 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Times New Roman">
+    <title>Austin's Portfolio</title>
+</head>
+<body>
+    <header class="mobile-header">
+        <h1>Austin Bennett</h1>
+        <h2>"Do nothing which is of no use" - Miyamoto Musashi</h2>
+        <figure>
+            <img src="images/AustinB.jpg" alt="Your Name" width="200" height="300" class="rounded-element" class="box-with-shadow">
+        </figure>
+    </header>
+    <nav class="mobile-menu">
+        <button class="menu-toggle">Menu</button>
+        <ul class="menu-items">
+            <!--These are the tabs for my website-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="obsidianProjects.html">Obsidian Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="personalPlan.html">Personal Plan for Career</a></li>
+        </ul>
+    </nav>
+    <main class="mobile-content" class="text-with-shadow">
+        <!-- This will be the "About the Website" that was on the wireframe-->
+        <p>Welcome to my portfolio website. 
+            I will show you my personal Obsidian projects, my Resume, and my personal plan for my career.</p>
+    </main>
+    
+    <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+    
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+    
+        <label for="subscribe">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br>
+    
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+    </div>    
+</body>
+</html>
