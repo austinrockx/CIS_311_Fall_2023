@@ -61,7 +61,7 @@ body {
 
 .menu-toggle {
     display: block;
-    background-color: #3498db;
+    background-color: red;
     color: #fff;
     border: none;
     padding: 10px;
