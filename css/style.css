@@ -42,32 +42,74 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* CSS for mobile header */
-.mobile-header {
+.header {
     background-color: #3498db;
     color: #fff;
     padding: 10px;
 }
 
-/* CSS for mobile content */
-.mobile-content {
+.content {
     font-size: 16px;
     line-height: 1.5;
 }
+/* Navigation Menu */
 
-.mobile-menu {
+.menu {
+    clear: left;
+  }
+  
+  .menu ul {
+    list-style: none;
+    position: relative;
+  }
+  
+  .menu ul li {
+    float: left;
+  }
+  
+  .menu ul ul {
     display: none;
-}
-
-.menu-toggle {
+    position: absolute;
+    top: 100%;
+  }
+  
+  .menu ul ul li {
+    float: none;
+  }
+  
+  .menu ul li:hover > ul {
     display: block;
-    background-color: red;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
+  }
+  
+  .menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  .menu ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li a {
+    text-align: center;
+    display: block;
+    width: 160px;
+    padding: 0.7em 0;
+    text-decoration: none;
+    background-color:  #3498db;
+    color: white;
+  }
+  
+  .menu ul li a.current {
+    color:  #3498db;
+  }
+  .menu ul li a:hover,
+  .menu ul li a:focus {
+    background-color: gray;
+  }
+  
 .menu-items {
     list-style: none;
     padding: 0;
@@ -81,31 +123,6 @@ body {
 
 .rounded-element {
     border-radius: 10px;
-}
-
-/* Mobile Styles (default) */
-
-/* Tablet Styles */
-@media screen and (min-width: 768px) {
-    .mobile-content {
-        display: none; /* Hide mobile-specific content */
-    }
-    .tablet-content {
-        display: block; /* Show tablet-specific content */
-    }
-}
-
-/* Desktop Styles */
-@media screen and (min-width: 1024px) {
-    .tablet-content {
-        display: none; /* Hide tablet-specific content */
-    }
-    .desktop-content {
-        display: block; /* Show desktop-specific content */
-    }
-    .desktop-button:hover {
-        background-color: #FF5733; /* Change background color on hover */
-    }
 }
 
 /* Define the grid container */
@@ -134,33 +151,6 @@ body {
     width: 200px;
     height: 200px;
     background-color: #3498db;
-}
-
-/* Styling the table for desktop view */
-.table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-/* Styling the table for tablet view */
-@media screen and (max-width: 1024px) {
-    .table {
-        font-size: 0.9em;
-    }
-}
-
-/* Styling the table for mobile view */
-@media screen and (max-width: 768px) {
-    .table {
-        font-size: 0.8em;
-    }
-}
-
-/* Style the mobile list if you choose to display it instead */
-.mobile {
-    list-style-type: disc;
-    padding-left: 20px;
 }
 
 form {
@@ -194,21 +184,4 @@ input[type="submit"] {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-}
-
-/* Style the form for tablet and mobile views as needed */
-@media screen and (max-width: 1024px) {
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        font-size: 0.8em;
-    }
 }
