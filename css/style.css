@@ -120,7 +120,6 @@ body {
 }
 
 /* Add CSS to make the menu expand/collapse as needed */
-
 .rounded-element {
     border-radius: 10px;
 }
@@ -184,6 +183,24 @@ input[type="submit"] {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+}
+
+/* Style for the hamburger menu */
+#hamburger-menu {
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    font-size: 30px; /* Example size */
+}
+
+/* Show the hamburger menu on mobile viewports */
+@media screen and (max-width: 600px) {
+    #hamburger-menu {
+        display: block;
+    }
+}
+
+.transformed-element {
+    transform: scale(1.2); /* Example transform */
 }
 
 /* These are the styles for my Resume page.*/
